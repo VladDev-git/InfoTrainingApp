@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_list">
+        <item>Підтягування</item>
+        <item>Відтискання</item>
+        <item>Прес</item>
+        <item>Витривалість</item>
+        <item>Продвинута база</item>
+    </string-array>
+</resources>

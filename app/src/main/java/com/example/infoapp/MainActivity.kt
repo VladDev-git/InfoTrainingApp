@@ -14,6 +14,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import com.example.infoapp.ui.theme.InfoAppTheme
+import com.example.infoapp.ui_components.DrawerMenu
 import com.example.infoapp.ui_components.MainTopBar
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -33,7 +34,7 @@ class MainActivity : ComponentActivity() {
                 ModalNavigationDrawer(
                     drawerState = drawerState,
                     drawerContent = {
-
+                        DrawerMenu()
                     }
                 ) {
                     Scaffold(
