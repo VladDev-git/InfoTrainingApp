@@ -45,7 +45,7 @@ fun MainTopBar(title: String, drawerState: DrawerState) {
             }
         },
         colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = CardRed,
+            containerColor = CardRed
         ),
         actions = {
             IconButton(

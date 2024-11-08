@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="drawer_list">
-        <item>Pull Up</item>
-        <item>Push Up</item>
+        <item>Pull Ups</item>
+        <item>Push Ups</item>
         <item>Abs</item>
         <item>Skills</item>
         <item>Advanced Base</item>
     </string-array>
 
     <string-array name="pull_ups">
-        <item>Pull Up|pull_up.jpg</item>
-        <item>Archer Push Up|archer_pull_up.jpg</item>
+        <item>Pull Ups|pull_up.jpg</item>
+        <item>Archer Pull Ups|archer_pull_up.jpg</item>
         <item>Australian Pull Up|australian_pull_up.jpg</item>
-        <item>High Pull Up|high_pull_up.jpg</item>
+        <item>High Pull Ups|high_pull_up.jpg</item>
         <item>Chin Up|chin_up.jpg</item>
     </string-array>
 
     <string-array name="push_ups">
+        <item>Push Ups|push_up.jpg</item>
+        <item>Archer Push Up|archer_push_ups.jpg</item>
+        <item>Dips|dips.jpg</item>
+        <item>Diamond Push Ups|diamond_push_ups.jpg</item>
+        <item>Triceps Extension|triceps_extension.jpg</item>
+    </string-array>
+
+    <string-array name="abs">
         <item>Toes to Bar|toes_to_bar.jpg</item>
         <item>Leg Raise|leg_raise.jpg</item>
         <item>Knee Raises|knee_raises.jpg</item>
@@ -37,7 +45,7 @@
         <item>Handstand Push Up|handstand_push_up.jpg</item>
         <item>One Arm Push Up|one_arm_push_up.jpg</item>
         <item>L-Sit Chin Up|l-sit_chin_up.jpg</item>
-        <item>Triceps Extension|triceps_extension.jpg</item>
+        <item>Pseudo Push Ups|pseudo_push_ups.jpg</item>
     </string-array>
 
 </resources>
