@@ -4,6 +4,7 @@ import android.graphics.BitmapFactory
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -28,12 +29,15 @@ import com.example.infoapp.ui.theme.CardRed
 import com.example.infoapp.untils.ListItem
 
 @Composable
-fun MainListItem(item: ListItem) {
+fun MainListItem(item: ListItem, onClick: (ListItem) -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .height(250.dp)
-            .padding(10.dp),
+            .padding(10.dp)
+            .clickable {
+                onClick(item)
+            },
         shape = RoundedCornerShape(10.dp),
         border = BorderStroke(2.dp, CardRed),
         colors = CardDefaults.cardColors(
@@ -45,7 +49,10 @@ fun MainListItem(item: ListItem) {
                 .fillMaxSize(),
             contentAlignment = Alignment.BottomCenter
         ) {
-            AssetImage(imageName = item.imageName, contentDescription = item.title)
+            AssetImage(imageName = item.imageName,
+                contentDescription = item.title,
+                modifier = Modifier.fillMaxSize()
+            )
             Text(
                 text = item.title,
                 modifier = Modifier
@@ -61,7 +68,7 @@ fun MainListItem(item: ListItem) {
 }
 
 @Composable
-fun AssetImage(imageName: String, contentDescription: String) {
+fun AssetImage(imageName: String, contentDescription: String, modifier: Modifier) {
     val context = LocalContext.current
     val assetManager = context.assets
     val inputStream = assetManager.open(imageName)
@@ -70,6 +77,6 @@ fun AssetImage(imageName: String, contentDescription: String) {
         bitmap = bitmap.asImageBitmap(),
         contentDescription = contentDescription,
         contentScale = ContentScale.Fit,
-        modifier = Modifier.fillMaxSize()
+        modifier = modifier
     )
 }

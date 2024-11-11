@@ -9,43 +9,43 @@
     </string-array>
 
     <string-array name="pull_ups">
-        <item>Pull Ups|pull_up.jpg</item>
-        <item>Archer Pull Ups|archer_pull_up.jpg</item>
-        <item>Australian Pull Up|australian_pull_up.jpg</item>
-        <item>High Pull Ups|high_pull_up.jpg</item>
-        <item>Chin Up|chin_up.jpg</item>
+        <item>Pull Up|pull_up.jpg|pull_up.html</item>
+        <item>Archer Pull Up|archer_pull_up.jpg|pull_up.html</item>
+        <item>Australian Pull Up|australian_pull_up.jpg|pull_up.html</item>
+        <item>High Pull Ups|high_pull_up.jpg|pull_up.html</item>
+        <item>Chin Up|chin_up.jpg|pull_up.html</item>
     </string-array>
 
     <string-array name="push_ups">
-        <item>Push Ups|push_up.jpg</item>
-        <item>Archer Push Up|archer_push_ups.jpg</item>
-        <item>Dips|dips.jpg</item>
-        <item>Diamond Push Ups|diamond_push_ups.jpg</item>
-        <item>Triceps Extension|triceps_extension.jpg</item>
+        <item>Push Up|push_up.jpg|pull_up.html</item>
+        <item>Archer Push Up|archer_push_ups.jpg|pull_up.html</item>
+        <item>Dip|dips.jpg|pull_up.html</item>
+        <item>Diamond Push Ups|diamond_push_ups.jpg|pull_up.html</item>
+        <item>Triceps Extension|triceps_extension.jpg|pull_up.html</item>
     </string-array>
 
     <string-array name="abs">
-        <item>Toes to Bar|toes_to_bar.jpg</item>
-        <item>Leg Raise|leg_raise.jpg</item>
-        <item>Knee Raises|knee_raises.jpg</item>
-        <item>Dragon Flag|dragon_flag.jpg</item>
-        <item>Advanced Leg Raises|advanced_leg_raises.jpg</item>
+        <item>Toes to Bar|toes_to_bar.jpg|pull_up.html</item>
+        <item>Leg Raise|leg_raise.jpg|pull_up.html</item>
+        <item>Knee Raises|knee_raises.jpg|pull_up.html</item>
+        <item>Dragon Flag|dragon_flag.jpg|pull_up.html</item>
+        <item>Advanced Leg Raises|advanced_leg_raises.jpg|pull_up.html</item>
     </string-array>
 
     <string-array name="skills">
-        <item>Muscle Up|muscle_up.jpg</item>
-        <item>Human Flag|human_flag.jpg</item>
-        <item>Planche|planche.jpg</item>
-        <item>V-Sit|v-sit.jpg</item>
-        <item>Front Lever|front_lever.jpg</item>
+        <item>Muscle Up|muscle_up.jpg|pull_up.html</item>
+        <item>Human Flag|human_flag.jpg|pull_up.html</item>
+        <item>Planche|planche.jpg|pull_up.html</item>
+        <item>V-Sit|v-sit.jpg|pull_up.html</item>
+        <item>Front Lever|front_lever.jpg|pull_up.html</item>
     </string-array>
 
     <string-array name="advanced_base">
-        <item>One Arm Pull Up|one_arm_pull_up.jpg</item>
-        <item>Handstand Push Up|handstand_push_up.jpg</item>
-        <item>One Arm Push Up|one_arm_push_up.jpg</item>
-        <item>L-Sit Chin Up|l-sit_chin_up.jpg</item>
-        <item>Pseudo Push Ups|pseudo_push_ups.jpg</item>
+        <item>One Arm Pull Up|one_arm_pull_up.jpg|pull_up.html</item>
+        <item>Handstand Push Up|handstand_push_up.jpg|pull_up.html</item>
+        <item>One Arm Push Up|one_arm_push_up.jpg|pull_up.html</item>
+        <item>L-Sit Chin Up|l-sit_chin_up.jpg|pull_up.html</item>
+        <item>Pseudo Push Ups|pseudo_push_ups.jpg|pull_up.html</item>
     </string-array>
 
 </resources>
