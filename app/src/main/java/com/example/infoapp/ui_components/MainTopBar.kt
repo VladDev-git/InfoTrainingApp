@@ -20,7 +20,11 @@ import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainTopBar(title: String, drawerState: DrawerState) {
+fun MainTopBar(
+    title: String,
+    drawerState: DrawerState,
+    onFavClick : () -> Unit
+) {
     val coroutineScope = rememberCoroutineScope()
 
     TopAppBar(
@@ -50,7 +54,7 @@ fun MainTopBar(title: String, drawerState: DrawerState) {
         actions = {
             IconButton(
                 onClick = {
-
+                    onFavClick()
                 },
                 colors = IconButtonDefaults.iconButtonColors(
                     contentColor = Color.White

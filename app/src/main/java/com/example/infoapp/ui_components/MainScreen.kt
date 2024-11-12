@@ -11,6 +11,8 @@ import androidx.compose.material3.ModalNavigationDrawer
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -28,11 +30,14 @@ import kotlinx.coroutines.launch
 fun MainScreen(mainViewModel: MainViewModel = hiltViewModel(), onClick: (ListItem) -> Unit) {
     val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
     val mainList = mainViewModel.mainList
+    val currentCategory = mainViewModel.currentCategory.collectAsState().value
     var topBarTitle by remember {
-        mutableStateOf("Training center")
+        mutableStateOf("Pull Ups")
     }
     val coroutineScope = rememberCoroutineScope()
-    mainViewModel.getAllItemsByCategory("")
+    LaunchedEffect(Unit) {
+        mainViewModel.getAllItemsByCategory(currentCategory)
+    }
 
     ModalNavigationDrawer(
         drawerState = drawerState,
@@ -52,7 +57,10 @@ fun MainScreen(mainViewModel: MainViewModel = hiltViewModel(), onClick: (ListIte
     ) {
         Scaffold(
             topBar = {
-                MainTopBar(title = topBarTitle, drawerState)
+                MainTopBar(title = topBarTitle, drawerState) {
+                    topBarTitle = "Favorites"
+                    mainViewModel.getFavorites()
+                }
             }
         ) { paddingValues ->
             Box(
